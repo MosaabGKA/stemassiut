@@ -6,7 +6,7 @@ html {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    scrollbar-color: rgb(195, 187, 247) #1f2029 ;
+    scrollbar-color: rgb(195, 187, 247) rgb(29, 29, 29) ;
     scrollbar-width: thin;  
     font-family: Cambo, Georgia, Times, 'Times New Roman', serif;
 }
@@ -15,14 +15,14 @@ html {
 }
 
 *::-webkit-scrollbar-track {
-  background: black;
+  background: rgb(29, 29, 29);
   width: 0.75vw;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: rgb(195, 187, 247) ;
-  border-radius: 20px;
-  border-left: 1px solid black;
+  border-radius: 25px;
+  border-left: 1px solid rgb(29, 29, 29);
 }
 a, ul, li{
     text-decoration:none;
@@ -112,6 +112,8 @@ header{
     height: 100vh;
     background: url(images/header-bg.jpg);
     background-size: cover;
+    text-align: center;
+    padding: 40vh 5vw;
 }
 
 
