@@ -113,3 +113,9 @@ header{
     background: url(images/header-bg.jpg);
     background-size: cover;
 }
+
+
+footer{
+    height: 50vh;
+    background-color: rgb(29, 29, 29);
+}
