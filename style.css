@@ -62,7 +62,7 @@ nav .logo-box{
 nav .logo{
     position: relative;
     width: 15vh;
-    border-right: 2px solid gray;
+    /* border-right: 2px solid gray; */
     margin-right: 0.5vw;
 }
 nav .logo-text{
@@ -150,8 +150,6 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    height: fit-content;
     background-color: rgb(29, 29, 29);
     padding: 5vh 5vw;
     color: white;
@@ -162,14 +160,17 @@ footer .center{
     align-items: center;
     width: 30vw;
 }
-footer .left{
-    width: 30vw;
-}
 footer .right{
     width: 30vw;
 }
+footer .left{
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 footer .center img{
-    width: 12vw;
+    width: 15vw;
     margin-bottom: 3vh;
 }
 footer .center span{
@@ -193,10 +194,11 @@ footer .list{
     margin-top: 4vh;
     width: 20vw;
 }
-footer .left h2{
+footer h2{
     margin-bottom: 4vh;
 }
-footer .left ul{
+footer .left .social{
+    margin-top: 3vh;
     font-size: 2em;
     display: flex;
     flex-direction: row;
