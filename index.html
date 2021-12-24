@@ -19,14 +19,19 @@
                     <span class="logo-text">Asyut STEM<br>	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;School</span>
                 </div>
             </a>
-            <ul>
+            <ul class="navlinks">
                 <li><a href="/"><span>HOME</span></a></li>
-                <li><a href="#"><span>ABOUT <i class="fas fa-caret-down"></i></span></a></li>
+                <li><a href="#"><span>ABOUT</span></a></li>
                 <li><a href="#"><span>ACADEMICS</span></a></li>
-                <li><a href="#"><span>EXTRACURRICULARS <i class="fas fa-caret-down"></i></span></a></li>
+                <li><a href="#"><span>EXTRACURRICULARS</span></a></li>
                 <li><a href="#"><span>ALUMNI</span></a></li>
                 <li><a href="#"><span>CONTACT</span></a></li>
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
         <header>
             <h1>Welcome to STEM Assiut</h1><br>
@@ -53,8 +58,8 @@
                         <br>CEEB Code: 648029
                     </p>
                     <ul class="social">
-                        <a href="https://www.facebook.com/STEM-Assiut-School-173102649915943"><li><i class="fab fa-facebook-square"></i></li></a>
-                        <a href="#"><li><i class="fab fa-linkedin"></i></li></a>
+                        <a href="https://www.facebook.com/AssiutSTEM"><li><i class="fab fa-facebook-square"></i></li></a>
+                        <a href="https://www.linkedin.com/school/assiutstemschool"><li><i class="fab fa-linkedin"></i></li></a>
                         <a href="mailto:assiutsch@stemassiut.moe.edu.eg"><li><i class="fas fa-envelope-square"></i></li></a>
                         <a href="tel:+201000000000"><li><i class="fas fa-phone-square-alt"></i></li></a>
                         <a href="https://goo.gl/maps/6ZHQYJtCQDCz4heD8"><li><i class="fa fa-map-marker-alt"></i></li></a>
@@ -85,7 +90,9 @@
                             project to provide technical assistance to the Ministry of Education to
                             establish a model STEM school in each Egyptian governorate. Assiut STEM
                             school was founded in 2015 and is a two semester based school that runs
-                            from September to June (Changed to October to July due to COVID-19).  
+                            from September to June (Changed to October to July due to COVID-19).
+                            <br><hr class="hr-left"><p class="copyright-left">© 2015-2021 Asyut STEM School, All Rights Reserved</p>
+
                         </p>
                     </div>
                 </div>    
@@ -101,6 +108,20 @@
                 nav.classList.toggle("sticky", window.scrollY > 0);
                 nav.classList.toggle("unsticky", window.scrollY > 222);
             });
+        </script>
+        <script type="text/javascript">
+            const navSlide = () => {
+                const burger = document.querySelector('.burger');
+                const nav = document.querySelector('.navlinks');
+                const navLinks = document.querySelectorAll('.navlinks li');
+
+                burger.addEventListener('click', () =>{
+
+                    nav.classList.toggle('nav-active');
+                });
+            }
+
+            navSlide();
         </script>
     </body>
 </html>
