@@ -71,25 +71,36 @@
                     </ul>
                 </div>
             </div>
-            <div class="center">
-                <img src="/images/logo-white.svg" alt="Asyut STEM School" class="footer-logo">
-            </div>
-            <div class="right">
-                <h2>Overview</h2>
-                <div class="overview">
-                    <p>
-                        Ranked the best Egyptian secondary school in Upper Egypt, Assiut STEM
-                        School is the product of a partnership between the U.S. Agency for
-                        International Development (USAID) and its sub-recipients the ECASE
-                        project to provide technical assistance to the Ministry of Education to
-                        establish a model STEM school in each Egyptian governorate. Assiut STEM
-                        school was founded in 2015 and is a two semester based school that runs
-                        from September to June (Changed to October to July due to COVID-19).  
-                    </p>
+            <div class="right-box">
+                <div class="center">
+                    <img src="/images/logo-white.svg" alt="Asyut STEM School" class="footer-logo">
                 </div>
+                <div class="right">
+                    <h2>Overview</h2>
+                    <div class="overview">
+                        <p>
+                            Ranked the best Egyptian secondary school in Upper Egypt, Assiut STEM
+                            School is the product of a partnership between the U.S. Agency for
+                            International Development (USAID) and its sub-recipients the ECASE
+                            project to provide technical assistance to the Ministry of Education to
+                            establish a model STEM school in each Egyptian governorate. Assiut STEM
+                            school was founded in 2015 and is a two semester based school that runs
+                            from September to June (Changed to October to July due to COVID-19).  
+                        </p>
+                    </div>
+                </div>    
             </div>
+            <hr>
+            <p class="copyright">© 2015-2021 Asyut STEM School, All Rights Reserved</p>
         </footer>
         <script src="txt-rotate.js"></script>
-        <script src="scroll.js"></script>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var nav = document.querySelector("nav");
+
+                nav.classList.toggle("sticky", window.scrollY > 0);
+                nav.classList.toggle("unsticky", window.scrollY > 222);
+            });
+        </script>
     </body>
 </html>

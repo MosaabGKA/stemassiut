@@ -130,7 +130,7 @@ header{
     background: url(images/header-bg.jpg);
     background-size: cover;
     text-align: center;
-    padding: 40vh 5vw;
+    padding: 30vh 5vw;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -147,37 +147,32 @@ header h4{
     font-weight: 400;
     font-style: italic;
 }
-
 footer{
+    color: white;
+    background-color: rgb(29, 29, 29);
+    padding: 5vh 5vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(29, 29, 29);
-    padding: 5vh 5vw;
-    color: white;
-}
-footer .center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30vw;
 }
 footer .right{
     width: 30vw;
 }
+footer .right-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
 footer .left{
-    width: 30vw;
+    width: 40vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-footer .center img{
-    width: 15vw;
-    margin-bottom: 3vh;
-}
-footer .center span{
-    font-size: 3vw;
-    color: white;
+footer img{
+    width: 16vw;
+    margin: 3vh 3vw;
 }
 footer li{
     color: white;
@@ -209,4 +204,75 @@ footer .left .social{
 }
 footer p{
     opacity: 0.7;
+}
+footer .copyright{
+    display: none;
+}
+footer hr{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .left{
+        justify-content: space-around;
+        width: 90vw;
+    }
+    footer img{
+        width: 30vw;
+    }
+    footer .right-box{
+        display: flex;
+        flex-direction: row;
+        width: 90vw;
+        justify-content: space-around;
+    }
+    footer .right{
+        width: 40vw;
+    }
+    footer .left .social{
+        width: 30vw;
+        justify-content: space-between;
+    }
+    footer hr{
+        display: block;
+        width: 90vw;
+        margin-bottom: 2vh;
+        height:2px;
+        border:none;
+        background-color:white;
+    }
+    footer .copyright{
+        display: block;
+    }    
+}
+@media screen and (max-width: 600px){
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer .left .social{
+        width: 90vw;
+        align-items: center;
+        justify-content: space-around;
+    }
+    footer .left{
+        flex-direction: column;
+    }
+    footer img{
+        width: 40vw;
+    }
+    footer .right-box{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90vw;
+        justify-content: space-around;
+    }
+    footer .right{
+        width: 90vw;
+    }
 }
