@@ -1,6 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Cambo&display=swap');
-html {
-    scroll-behavior: smooth;
+@font-face {
+    font-family: 'Canela Deck';
+    src: url(/web-fonts/CanelaDeck-Regular-Cy-Gr-Web.woff2) format('woff2'),
+         url(/web-fonts/CanelaDeck-Regular-Cy-Gr-Web.woff) format('woff');
+    font-weight:  400;
+    font-style:   normal;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: 'Canela Deck';
+    src: url(/web-fonts/CanelaDeck-Regular-Cy-Gr-Web.woff2) format('woff2'),
+         url(/web-fonts/CanelaDeck-Regular-Cy-Gr-Web.woff) format('woff');
+    font-weight:  400;
+    font-style:   italic;
+    font-stretch: normal;
 }
 *{
     margin: 0px;
@@ -8,7 +20,7 @@ html {
     box-sizing: border-box;
     scrollbar-color: rgb(195, 187, 247) rgb(29, 29, 29);
     scrollbar-width: thin;  
-    font-family: Cambo, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Canela Deck', Georgia, Times, 'Times New Roman', serif;
 }
 *::-webkit-scrollbar {
   width: 10px;
@@ -39,11 +51,11 @@ nav{
     align-items: center;
     transition: 0.6s;
     background-color: rgba(195, 187, 247, 0);
-    z-index: 10000;
+    z-index: 1;
 }
 nav.sticky{
     padding: 0vh 5vw;
-    background-color: rgba(195, 187, 247, 1);
+    background-color: rgb(124, 130, 163);
 }
 nav .logo-box{
     display: flex;
@@ -63,7 +75,7 @@ nav .logo-text{
     color: #fff;
     width: 100px;
     border-left: 2px solid gray;
-    text-shadow: 2px 2px 2px #000;
+    text-shadow: 1px 1px 1px #000;
 }
 nav ul{
     position: relative;
@@ -115,19 +127,41 @@ header{
     background-size: cover;
     text-align: center;
     padding: 40vh 5vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 header h1{
     font-size: 6em;
     color: white;
     text-shadow: 2px 2px 3px #000;
+    font-weight: 500;
 }
 header h4{
     font-size: 2em;
     color: white;
     text-shadow: 1px 1px 1px #000;
+    font-weight: 400;
+    font-style: italic;
 }
 
 footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     height: 50vh;
     background-color: rgb(29, 29, 29);
+    padding: 5vh 5vw;
+}
+footer .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .center img{
+    width: 15vw;
+}
+footer .center span{
+    font-size: 3em;
+    color: white;
 }
