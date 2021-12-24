@@ -55,6 +55,9 @@ nav.sticky{
     padding: 0vh 5vw;
     background-color: rgb(124, 130, 163);
 }
+nav.unsticky{
+    opacity: 0;
+}
 nav .logo-box{
     display: flex;
     flex-direction: row;
@@ -62,7 +65,6 @@ nav .logo-box{
 nav .logo{
     position: relative;
     width: 15vh;
-    /* border-right: 2px solid gray; */
     margin-right: 0.5vw;
 }
 nav .logo-text{
