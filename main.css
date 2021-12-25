@@ -12,12 +12,36 @@
     font-style:   italic;
     font-stretch: normal;
 }
+@font-face {
+    font-family: 'GT America';
+    src: url(/web-fonts/GT-America-Standard-Regular.woff2) format('woff2');
+    font-weight:  400;
+    font-style:   normal;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: 'GT America';
+    src: url(/web-fonts/GT-America-Standard-Medium.woff2) format('woff2');
+    font-weight: medium;
+    font-style: normal;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: 'GT America';
+    src: url(/web-fonts/GT-America-Standard-Bold.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+}
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     scrollbar-color: rgb(195, 187, 247) rgb(29, 29, 29);
-    scrollbar-width: thin;  
+    scrollbar-width: thin; 
+    font-family:'GT America','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+h1,h1,h3,h4,h5,h6{
     font-family: 'Canela Deck', Georgia, Times, 'Times New Roman', serif;
 }
 *::-webkit-scrollbar {
@@ -69,6 +93,7 @@ nav .logo{
     margin-right: 0.5vw;
 }
 nav .logo-text{
+    font-family: 'Canela Deck', Georgia, Times, 'Times New Roman', serif;
     top: 3vh;
     text-align: center;
     position: relative;
@@ -135,30 +160,6 @@ nav ul li a:focus::after {
   opacity: 1;
   transform: translate3d(0, 0.2em, 0);
 }
-header{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url(images/header-bg.jpg);
-    background-size: cover;
-    text-align: center;
-    padding: 30vh 5vw;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-header h1{
-    font-size: 6em;
-    color: white;
-    text-shadow: 2px 2px 3px #000;
-    font-weight: 500;
-}
-header h4{
-    font-size: 2em;
-    color: white;
-    text-shadow: 1px 1px 1px #000;
-    font-weight: 400;
-    font-style: italic;
-}
 footer{
     color: white;
     background-color: rgb(29, 29, 29);
@@ -202,6 +203,9 @@ footer li:hover{
     text-decoration: underline;
     opacity: 0.9;
 }
+footer h2{
+    font-family: 'Canela Deck', Georgia, Times, 'Times New Roman', serif;
+}
 footer .list{
     display: flex;
     flex-direction: row;
@@ -210,7 +214,7 @@ footer .list{
     width: 20vw;
 }
 footer h2{
-    margin-bottom: 4vh;
+    margin-bottom: 3vh;
 }
 footer .left .social{
     margin-top: 3vh;

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='main.css' rel='stylesheet'>
+        <link href='/main.css' rel='stylesheet'>
         <link href='body.css' rel='stylesheet'>
         <link href="images/icon.png" rel="icon">
         <script defer src="icons.js"></script>
@@ -33,19 +33,6 @@
                 <div class="line3"></div>
             </div>
         </nav>
-        <header>
-            <h1>Welcome to STEM Assiut</h1><br>
-            <p>A place for 
-                <span
-                class="txt-rotate"
-                data-period="6000"
-                data-rotate='[ "innovation.", "excellence.", "uniqueness.", "....!" ]'> 
-                </span>
-            </p>
-        </header>
-        <section>
-
-        </section>
         <footer>
             <div class="left">
                 <div>
@@ -100,7 +87,6 @@
             <hr>
             <p class="copyright">© 2015-2021 Asyut STEM School, All Rights Reserved</p>
         </footer>
-        <script src="txt-rotate.js"></script>
         <script type="text/javascript" class="scroll-sticky">
             window.addEventListener("scroll", function(){
                 var nav = document.querySelector("nav");
