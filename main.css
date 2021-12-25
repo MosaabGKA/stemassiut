@@ -80,7 +80,7 @@ nav.sticky{
     background-color: rgb(124, 130, 163);
 }
 nav.unsticky{
-    transform: translateX(-100vh);
+    transform: translateX(100vw);
     opacity: 0;
 }
 nav .logo-box{
