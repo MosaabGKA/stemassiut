@@ -123,19 +123,21 @@ nav ul{
     width: 25px;
     margin: 4px;
     border-radius: 3px;
+    transition: all 0.2s ease-in-out;
 }
-.burger:active div .line2{
+.burger .line2.open{
     opacity: 0;
+    transform: translateX(-5px);
 }
-.burger:active div .line1{
-    transform: rotateX(45deg);
-    -ms-transform: rotateX(45deg);
-    -webkit-transform: rotateX(45deg);
+.burger .line1.open{
+    transform: rotate(45deg) translateY(10px);
+    -ms-transform: rotate(45deg) translateY(10px);
+    -webkit-transform: rotate(45deg) translateY(10px);
 }
-.burger:active div .line3{
-    transform: rotateX(45deg);
-    -ms-transform: rotateX(45deg);
-    -webkit-transform: rotateX(45deg);
+.burger .line3.open{
+    transform: rotate(-45deg) translateY(-10px);
+    -ms-transform: rotate(-45deg) translateY(-10px);
+    -webkit-transform: rotate(-45deg) translateY(-10px);
 }
 nav ul li{
     position: relative;
