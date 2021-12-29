@@ -122,6 +122,20 @@ nav ul{
     height: 2.5px;
     width: 25px;
     margin: 4px;
+    border-radius: 3px;
+}
+.burger:active div .line2{
+    opacity: 0;
+}
+.burger:active div .line1{
+    transform: rotateX(45deg);
+    -ms-transform: rotateX(45deg);
+    -webkit-transform: rotateX(45deg);
+}
+.burger:active div .line3{
+    transform: rotateX(45deg);
+    -ms-transform: rotateX(45deg);
+    -webkit-transform: rotateX(45deg);
 }
 nav ul li{
     position: relative;

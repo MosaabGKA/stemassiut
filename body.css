@@ -5,9 +5,10 @@ header{
     background: url(images/header-bg.jpg);
     background-size: cover;
     text-align: center;
-    padding: 30vh 5vw;
+    padding: 25vh 5vw;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment:fixed;
+    background-position: top center;
 }
 header h1{
     font-size: 6em;
