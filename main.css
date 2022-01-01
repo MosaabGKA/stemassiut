@@ -41,16 +41,16 @@
     scrollbar-width: thin; 
     font-family:'GT America','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 }
-h1,h1,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6{
     font-family: 'Canela Deck', Georgia, Times, 'Times New Roman', serif;
 }
 *::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
 }
 
 *::-webkit-scrollbar-track {
   background: rgb(29, 29, 29);
-  width: 10px;
+  width: 12px;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -73,7 +73,7 @@ nav{
     align-items: center;
     transition: 0.6s;
     background-color: rgba(124, 130, 163, 0);
-    z-index: 1;
+    z-index: 99;
 }
 nav.sticky{
     padding: 0vh 5vw;
@@ -204,13 +204,9 @@ footer .center{
     flex-direction: row;
     justify-content:center;
     width: 30vw;
-    background: url(/images/logo-white.svg);
-    background-repeat: no-repeat;
-    
 }
 footer img{
-    width: 18vw;
-    margin: 3vh 3vw ;
+    width: 15vw;
 }
 footer li{
     color: white;
