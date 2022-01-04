@@ -13,7 +13,7 @@ header{
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-position: center;
-    background-position-y: -200px;
+    background-position-y: -350px;
     justify-content: flex-end;
 }
 header h1{
@@ -93,17 +93,52 @@ section .section-content ul img{
 section .sectionbody{
     flex-direction: row;
 }
-#boarding img {
+section .right img{
     transform: translateX(-75px);
 }
-#boarding p {
+section .right p{
     transform: translateX(75px);
 }
-#vision img {
+section .left img{
     transform: translateX(75px);
+}
+section .left p{
+    transform: translateX(-75px);
+}
+#vision img {
     width: 30vw;
     height: auto;
 }
-#vision p {
-    transform: translateX(-75px);
+#admission{
+    padding: 0vh 15vw;
+}
+#admission p{
+    font-size: 16pt;
+}
+.admission-reqs{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    padding: 5vh 0vw;
+    justify-content: space-between;
+    width: 100%;
+}
+.admission-reqs .card{
+    background-color: rgba(124, 130, 163, 0.7);
+    border-radius: 12px;
+    width: 20vw;
+    height: 35vh;
+    padding: 4vh 2vw;
+}
+.admission-reqs .card li{
+    list-style-type: decimal;
+    font-size: 16pt;
+}
+#activities img {
+    width: auto;
+    height: 70vh;
+}
+#labs img{
+    width: 30vw;
+    height: auto;
 }
