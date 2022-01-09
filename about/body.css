@@ -13,7 +13,6 @@ header{
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-position: center;
-    background-position-y: -350px;
     justify-content: flex-end;
 }
 header h1{
@@ -131,14 +130,20 @@ section .left p{
     padding: 4vh 2vw;
 }
 .admission-reqs .card li{
-    list-style-type: decimal;
     font-size: 16pt;
+}
+.admission-reqs .card li:before{
+    content: '-';
+    position: absolute;
+    margin-left: -20px;
 }
 #activities img {
     width: auto;
     height: 70vh;
 }
 #labs img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1) translateX(75px);
     width: 30vw;
     height: auto;
 }

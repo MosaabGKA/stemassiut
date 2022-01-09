@@ -45,18 +45,18 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Canela Deck', Georgia, Times, 'Times New Roman', serif;
 }
 *::-webkit-scrollbar {
-  width: 12px;
+  width: 14px;
 }
 
 *::-webkit-scrollbar-track {
   background: rgb(29, 29, 29);
-  width: 12px;
+  width: 15px;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: rgb(195, 187, 247);
   border-radius: 25px;
-  border: 2px solid rgb(29, 29, 29);
+  border: 3px solid rgb(29, 29, 29);
 }
 a, ul, li{
     text-decoration:none;
