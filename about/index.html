@@ -37,7 +37,7 @@
             <h1>About</h1>
             <p>an overview about us.</p>
         </header>
-        <section>
+        <section class="reveal">
             <div class="section-head">
                 <h1>Overview</h1>
             </div>
@@ -62,7 +62,7 @@
         <div class="hr">
             <hr>
         </div>
-        <section>
+        <section class="reveal">
             <div class="section-head">
                 <h1>Vision & Mission</h1>
             </div>
@@ -86,7 +86,7 @@
         <div class="hr">
             <hr>
         </div>
-        <section>
+        <section class="reveal">
             <div class="section-head">
                 <h1>Boarding School Experience</h1>
             </div>
@@ -109,7 +109,7 @@
         <div class="hr">
             <hr>
         </div>
-        <section>
+        <section class="reveal">
             <div class="section-head">
                 <h1>Admission</h1>
             </div>
@@ -148,7 +148,7 @@
         <div class="hr">
             <hr>
         </div>
-        <section>
+        <section class="reveal">
             <div class="section-head">
                 <h1>Activities</h1>
             </div>
@@ -169,7 +169,7 @@
         <div class="hr">
             <hr>
         </div>
-        <section>
+        <section class="reveal">
             <div class="section-head">
                 <h1>STEM Labs & Fab Lab</h1>
             </div>
@@ -255,9 +255,30 @@
                 var nav = document.querySelector("nav");
 
                 nav.classList.toggle("sticky", window.scrollY > 0);
-                nav.classList.toggle("unsticky", window.scrollY > 4700);
+                nav.classList.toggle("unsticky", window.scrollY > 6900);
             });
         </script>
         <script src="/sliding-navbar.js"></script>
+        <script type="text/javascript" class="items-reveal">
+            window.addEventListener('scroll', reveal);
+
+            function reveal(){
+                var reveals = document.querySelectorAll('.reveal');
+
+                for(var i = 0; i < reveals.length; i++){
+                    
+                    var windowHeight = window.innerHeight;
+                    var revealTop = reveals[i].getBoundingClientRect().top;
+                    var revealPoint = 150;
+
+                    if(revealTop < windowHeight - revealPoint){
+                        reveals[i].classList.add('active');
+                    }
+                    else{
+                        reveals[i].classList.remove('active');
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
