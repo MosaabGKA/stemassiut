@@ -253,7 +253,9 @@
         <script type="text/javascript" class="scroll-sticky">
             window.addEventListener("scroll", function(){
                 var nav = document.querySelector("nav");
-
+                var footer = document.querySelector("footer");
+                footer.addEventListener("pos")
+                
                 nav.classList.toggle("sticky", window.scrollY > 0);
                 nav.classList.toggle("unsticky", window.scrollY > 6900);
             });
