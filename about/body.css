@@ -7,11 +7,10 @@ header{
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-height: 70vh;
-    height: 70vw;
+    height: 70vh;
     background: url(/about/images/header.jpg);
     background-size: cover;
-    padding: 6vh 5vw;
+    padding: 10vh 5vw;
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-position: center;
@@ -210,8 +209,20 @@ section .left p{
     }
 }
 @media screen and (max-width: 500px){
+    header{
+        padding-bottom: 6vh;
+    }
+    header h1{
+        font-size: 26pt;
+    }
+    header p{
+        font-size: 20pt;
+    }
+    section .section-content{
+        width: 90vw;
+    }
     section .sectionbody p, section .section-content p{
-        width: 70vw;
+        width: 90vw;
         font-size: 14pt;
     }
     section .section-head{
@@ -231,18 +242,21 @@ section .left p{
         transform: translateX(0px) translateY(-50px);
     }
     
+    section .section-content ul{
+        width: 70vw;
+    }
     section .section-content ul img{
-        height: 16vw;
+        height: 20vw;
     }
     
     #vision img {
-        width: 50vw;
+        width: 70vw;
         height: auto;
     }
     #labs img{
         -webkit-transform: none;
         transform: none;
-        width: 50vw;
+        width: 70vw;
         height: auto;
     }
 }
