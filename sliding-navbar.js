@@ -6,19 +6,12 @@ const navSlide = () => {
     burger.addEventListener('click', () =>{
         nav.classList.toggle('nav-active');
         let menuOpen = false;
-        const line1 = document.querySelector('.line1');
-        const line2 = document.querySelector('.line2');
-        const line3 = document.querySelector('.line3');
 
         if (!menuOpen){
-            line1.classList.toggle('open');
-            line2.classList.toggle('open');
-            line3.classList.toggle('open');
+            burger.classList.toggle('open');
             menuOpen = true;
         } else {
-            line1.classList.remove('open');
-            line2.classList.remove('open');
-            line3.classList.remove('open');
+            burger.classList.remove('open');
             menuOpen = false;
         }
     });

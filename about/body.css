@@ -47,7 +47,7 @@ section{
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 5vh 0vw;
+    padding-top: 5vh;
     align-items: center;
     height: fit-content;
 }
@@ -114,6 +114,7 @@ section .left p{
 }
 #admission p{
     font-size: 16pt;
+    margin-bottom: 5vh;
 }
 .admission-reqs{
     display: flex;
@@ -243,7 +244,7 @@ section .left p{
     }
     
     section .section-content ul{
-        width: 70vw;
+        width: 80vw;
     }
     section .section-content ul img{
         height: 20vw;
@@ -267,5 +268,8 @@ section .left p{
     #boarding img{
        width: 80vw;
        height: auto; 
+    }
+    section .section-head h1{
+        font-size: 2.5em;
     }
 }

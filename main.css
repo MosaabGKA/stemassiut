@@ -116,25 +116,33 @@ nav ul{
 .burger{
     display: none;
     cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    transition: all ease 0.5s;
 }
 .burger div{
-    background-color: #fff;
+    background-color: #333;
     height: 2.5px;
     width: 25px;
-    margin: 4px;
+    margin: 2.2px;
     border-radius: 3px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;   
 }
-.burger .line2.open{
+.burger.open{
+    background-color: #fff0;
+}
+.burger.open .line2{
     opacity: 0;
     transform: translateX(-5px);
 }
-.burger .line1.open{
+.burger.open .line1{
     transform: rotate(45deg) translateY(10px);
     -ms-transform: rotate(45deg) translateY(10px);
     -webkit-transform: rotate(45deg) translateY(10px);
 }
-.burger .line3.open{
+.burger.open .line3{
     transform: rotate(-45deg) translateY(-10px);
     -ms-transform: rotate(-45deg) translateY(-10px);
     -webkit-transform: rotate(-45deg) translateY(-10px);
@@ -278,7 +286,10 @@ footer .hr-left{
         transition: transform 0.5s ease-in;
     }   
     .burger{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .nav-active{
         transform: translateX(0%);
