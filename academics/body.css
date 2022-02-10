@@ -8,7 +8,7 @@ header{
     flex-direction: column;
     width: 100%;
     height: 70vh;
-    background: url(/about/images/header.jpg);
+    background: url(/academics/images/header.jpg);
     background-size: cover;
     padding: 10vh 5vw;
     background-repeat: no-repeat;
@@ -54,6 +54,7 @@ section{
 }
 section .section-head h1{
     font-size: 3em;
+    text-align: center;
 }
 section .section-content{
     display: flex;
@@ -101,8 +102,13 @@ section p{
 .tables#grading table tr th:nth-child(2){
     border-radius: 0px 15px 15px 0px;
 }
-#graduation div ul li{
-    list-style: square;
+.figure{
+    height: 60vh; 
+    width: 60vw; 
+    background-repeat: no-repeat;
+    background-image: url(/academics/images/grad.svg); 
+    background-position: center center; 
+    background-size: fill;
 }
 
 .reveal{
@@ -165,6 +171,10 @@ section p{
     .tables table{
         font-size: 0.7em;
     }
+    .figure{
+        width: 90vw;
+        height: 70vh;
+    }
 }
 @media screen and (max-width: 615px){
     .tables table{
@@ -217,5 +227,9 @@ section p{
     }
     section .section-head h1{
         font-size: 1.4em;
+    }
+    .figure{
+        width: 90vw;
+        height: 50vh;
     }
 }

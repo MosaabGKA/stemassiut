@@ -165,7 +165,7 @@ nav ul li a:hover{
 }
 nav ul li a span{
     position: relative;
-    transition: ease all, 0.35s;
+    transition: ease all 0.35s;
 }
 nav ul li a::after{
     content: '';
@@ -174,15 +174,17 @@ nav ul li a::after{
     left: 0;
     width: 100%;
     height: 0.1em;
-    border-radius: 20px;
+    border-radius: 2px;
     background-color: white;
     opacity: 0;
-    transition: opacity 300ms, transform 300ms;
+    transition: all 0.4s ease;
+    transform: scale(0, 1);
+  transform-origin: 0% 100%;
 }
 nav ul li a:hover::after,
 nav ul li a:focus::after {
   opacity: 1;
-  transform: translate3d(0, 0.2em, 0);
+  transform: scale(1, 1);
 }
 footer{
     color: white;
