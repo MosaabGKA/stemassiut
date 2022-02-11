@@ -117,31 +117,10 @@ section .section-content img{
 }
 
 
-@media screen and (max-width: 790px){
-    section .sectionbody{
-        flex-direction: column;
-    }
-    section .sectionbody.right{
-        flex-direction: column-reverse;
-    }
-    section .sectionbody p, section .section-content p{
+@media screen and (max-width: 805px){
+    .form form{
         width: 70vw;
     }
-    section .right img{
-        transform: translateX(0px);
-    }
-    section .right p{
-        transform: translateX(0px) translateY(-100px);
-    }
-    section .left img{
-        transform: translateX(0px);
-    }
-    section .left p{
-        transform: translateX(0px) translateY(-100px);
-    }
-}
-@media screen and (max-width: 805px){
-
 }
 @media screen and (max-width: 500px){
     header{
@@ -153,32 +132,12 @@ section .section-content img{
     header p{
         font-size: 20pt;
     }
-    section .section-content{
-        width: 90vw;
-    }
-    section .sectionbody p, section .section-content p{
-        width: 90vw;
-        font-size: 14pt;
-    }
-    section .section-head{
-        font-size: 8pt;
-        height: 6vh;
-    }
-    section .right img{
-        transform: translateX(0px);
-    }
-    section .right p{
-        transform: translateX(0px) translateY(-50px);
-    }
-    section .left img{
-        transform: translateX(0px);
-    }
-    section .left p{
-        transform: translateX(0px) translateY(-50px);
+    .form form{
+        width: 80vw;
     }
 }
 @media screen and (max-width: 400px){
-    section .section-head h1{
-        font-size: 2.5em;
+    .form form{
+        width: 90vw;
     }
 }
