@@ -7,8 +7,7 @@
         <link href='/main.css' rel='stylesheet'>
         <link href='body.css' rel='stylesheet'>
         <link href="/images/icon.png" rel="icon">
-        <script defer src="icons.js"></script>
-        <title>Asyut STEM School | Home</title>
+        <script src="/icons.js"></script>        <title>Asyut STEM School | Home</title>
         <meta name="description" content="Asyut STEM School is a school that ranked as the best high in Upper Egypt">
     </head>
     <body>
@@ -34,50 +33,22 @@
             </div>
         </nav>
         <header>
-            <h1>About</h1>
-            <p>an overview about us.</p>
+            <h1>Contact</h1>
+            <p>get in touch with us.</p>
         </header>
-        <section class="reveal">
-            <div class="section-head">
-                <h1>Overview</h1>
-            </div>
-            <div class="section-content">
-                <p>
-                    Ranked the best Egyptian secondary school in <b>Upper Egypt</b>, <i>Assiut STEM
-                    School</i> is the product of a partnership between the <i>U.S. Agency for
-                    International Development (USAID)</i> and its sub-recipients the <i>ECASE</i>
-                    project to provide technical assistance to the <i>Ministry of Education</i> to
-                    establish a model STEM school in each Egyptian governorate. Assiut STEM
-                    school was founded in <b>2015</b> and is a two semester based school that runs
-                    from September to June (Changed to October to July due to COVID-19).<br><b><i>Accreditation:</i></b> The school is accredited by the United States Agency for
-                    International Development (USAID) and the Egyptian Ministry of Education.
-                </p>
-            </div>
+        <section class="form reveal">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h1><i class="fas fa-user"></i> User Info</h1>
+                <input type="text" name="name" id="name" placeholder="Full Name" maxlength="50" required>
+                <input type="email" name="email" id="email" placeholder="Email" maxlength="50" required>
+                <input type="text" name="phone" id="phone" placeholder="Phone Number" maxlength="25" required>
+                <h1><i class="fas fa-file-lines"></i> Message</h1>
+                <textarea name="message" id="message" placeholder="Questions or Recommendations" rows="5" cols="10" maxlength="300" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </section>
-        <div class="hr">
-            <hr>
-        </div>
-        <section class="reveal">
-            <div class="section-head">
-                <h1>Vision & Mission</h1>
-            </div>
-            <div class="section-content sectionbody left" id="vision">
-                <img src="/about/images/vision.jpg" alt="Vision & Mission">
-                <p>
-                    With the aim to nurture Upper Egyptian future shapers who demonstrate
-                    entrepreneurial leadership, high ethical standards, and civic engagement
-                    – regardless of their socioeconomic background- Assiut STEM School
-                    offers a rigorous program that focuses on scientific, mathematical, and
-                    technological fields with the first introduction to project-based learning in
-                    Upper Egypt which ensures students’ life interaction with the subjects they
-                    study. We believe that the school is designed to create “centers of excellence” 
-                    that embody trans- disciplinary collaboration, real world applications, 
-                    critical thinking, and a pioneering spirit to support the new Egyptian vision 
-                    as a country equipped with both the human capital and the institutional resources 
-                    to compete and excel in the international marketplace.
-                    </p>
-            </div>
-        </section>
+        
+
         <footer>
             <div class="left">
                 <div>
@@ -155,10 +126,26 @@
                         reveals[i].classList.add('active');
                     }
                     else{
-                        reveals[i].classList.remove('active');
+                        // reveals[i].classList.remove('active');
                     }
                 }
             }
+        </script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script type="text/javascript">
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "assiut@stemschools.moe",
+                    Password : "71673330940A046502FB603C7058C87CE6F1",                    
+                    To : 'assiut@stemschools.moe.edu.eg',
+                    From : "assiut@stemschools.moe.edu.eg",
+                    Subject : "STEM Asyut Contact Form Submission",
+                    Body : "And this is the body"
+                }).then(
+                message => alert(message)
+                );
+            };
         </script>
     </body>
 </html>
