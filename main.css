@@ -99,7 +99,7 @@ nav .logo-text{
     position: relative;
     margin: 15px 7px;
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1.35em;
     letter-spacing: 2px;
     text-decoration: none;
     color: #fff;
@@ -156,7 +156,7 @@ nav ul li a{
     margin: 2vh 2vw;
     color: white;
     font-weight: 600;
-    font-size: 14pt;
+    font-size: 1em;
     opacity: 0.7;
     transition: 0.3s;
 }
@@ -382,4 +382,10 @@ footer .hr-left{
     *::-webkit-scrollbar {
         width: 0px;
     }
+}
+@media screen and (max-width: 323px){
+    nav .logo-text{
+        top: 4vh;
+        font-size: 1em;
+    }   
 }
