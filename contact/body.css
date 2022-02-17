@@ -134,10 +134,10 @@ section .section-content img{
     height: fit-content;
     padding: 0;
     margin: 0;
-    transition: all ease 0.4s; 
+    transition: all ease 0.2s; 
 }
 .people .administration .person:hover{
-    transform: scale(110%);
+    transform: scale(102%);
 }
 .people .administration .person img{
     width: 21vw;
