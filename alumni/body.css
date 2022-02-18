@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 body{
     line-height: 1.5;
     transition: all 0.3s ease;
@@ -117,6 +118,28 @@ section .section-content img{
 .zc{
     border-radius: 50%;
 }
+section.talks{
+    background-color: #01032c0b;
+    text-align: center;
+}
+section .alumni-talks img{
+    width: 10vw;
+    height: auto;
+    border-radius: 50%;
+}
+section .alumni-talks .name{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+section .alumni-talks .headline1{
+    font-size: 1em;
+    font-style: italic;
+}
+section .alumni-talks .talk{
+    font-family: 'Amiri', serif;
+    font-weight: bold;
+    font-style: italic;
+}
 
 .reveal{
     position: relative;
@@ -164,6 +187,10 @@ section .section-content img{
         justify-content: center;
         align-items: center;
     }
+    section .alumni-talks img{
+        width: 15vw;
+    }
+
 }
 @media screen and (max-width: 500px){
     header{
@@ -225,6 +252,9 @@ section .section-content img{
         justify-content: center;
         align-items: center;
     }
+    section .alumni-talks img{
+        width: 25vw;
+    }
 }
 @media screen and (max-width: 400px){
     section p{
@@ -244,5 +274,8 @@ section .section-content img{
     section .section-content img{
         width: 60vw;
         height: auto;
+    }
+    section .alumni-talks img{
+        width: 30vw;
     }
 }
