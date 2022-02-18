@@ -124,7 +124,8 @@ section .section-content img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 70vw;
+    /* width: 70vw; */
+    width: 50vw;
     margin-bottom: 50px;
 }
 .people .administration .person{
