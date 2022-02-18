@@ -139,6 +139,7 @@ section .alumni-talks .talk{
     font-family: 'Amiri', serif;
     font-weight: bold;
     font-style: italic;
+    opacity: 0.8;
 }
 
 .reveal{
