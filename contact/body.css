@@ -115,6 +115,11 @@ section .section-content img{
 .form form button{
     background-color: #01032C;
     color: #ffffff;
+    cursor: pointer;
+    transition: ease all 0.2s;
+}
+.form form button:hover{
+    opacity: 0.9;
 }
 .people{
     height: fit-content;
@@ -246,6 +251,11 @@ section .section-content img{
         height: 40vh;
     }    
 }
+@media screen and (max-width: 450px){
+    .form form p a{
+        font-size: 3vw;
+    }
+}
 @media screen and (max-width: 400px){
     .form form{
         width: 90vw;
@@ -259,4 +269,7 @@ section .section-content img{
     .map{
         width: 90vw;
     }    
+    .form form p a{
+        font-size: 4vw;
+    }
 }
