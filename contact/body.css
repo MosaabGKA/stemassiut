@@ -157,7 +157,7 @@ section .section-content img{
 .people .administration.counselling{
     flex-direction: column;
     height: 70vh;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .people .administration.counselling .person{
