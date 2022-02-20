@@ -256,6 +256,12 @@ section .alumni-talks .talk{
     section .alumni-talks img{
         width: 25vw;
     }
+    section.talks .section-head h1{
+        font-size: 2.5em;
+    }
+    section.talks .alumni-talks q.talk{
+        font-size: 0.8em;
+    }
 }
 @media screen and (max-width: 400px){
     section p{
@@ -278,5 +284,8 @@ section .alumni-talks .talk{
     }
     section .alumni-talks img{
         width: 30vw;
+    }
+    section.talks .section-head h1{
+        font-size: 2em;
     }
 }
