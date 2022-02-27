@@ -265,6 +265,10 @@ footer .copyright-left{
 footer .hr-left{
     display: block;
     width: 30vw;
+    border-radius: 0% !important;
+}
+header{
+    transition: all ease 0.25s;
 }
 
 .current-page{
