@@ -279,7 +279,7 @@ header{
     nav ul{
         display: none;
         position: absolute;
-        padding-top: 15vh;
+        padding: 20vh 0vh 5vh 0vh;
         right: 0px;
         height: 100vh;
         top: 0vh;
