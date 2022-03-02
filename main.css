@@ -78,6 +78,7 @@ nav{
 nav.sticky{
     padding: 0vh 5vw;
     background-color: #01032c;
+    box-shadow: 0px 0px 5px 3px #6666;
 }
 nav.unsticky{
     transform: translateX(100vw);

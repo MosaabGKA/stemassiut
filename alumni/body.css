@@ -52,7 +52,6 @@ section{
     flex-direction: column;
     padding: 5vh 5vw;
     align-items: center;
-    height: fit-content;
 }
 section .section-head h1{
     font-size: 3em;
@@ -119,7 +118,7 @@ section .section-content img{
     border-radius: 50%;
 }
 section.talks{
-    background-color: #01032c0b;
+    background-color: #fff;
     text-align: center;
 }
 section .alumni-talks img{
