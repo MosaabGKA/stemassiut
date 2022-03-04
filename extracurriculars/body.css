@@ -85,7 +85,7 @@ section p{
 }
 .comp ul li p, .exchange ul li p{
     opacity: 0.8;
-    width: fit-content;
+    height: fit-content;
 }
 .comp ul li:hover, .exchange ul li:hover{
     transform: scale(102%);
@@ -116,6 +116,12 @@ hr.star{
     section .sectionbody p, section .section-content p{
         width: 90vw;
     }
+    .comp ul li p, .exchange ul li p{
+        width: 90%;
+    }
+    hr.star{
+        width: 50vw;
+    }
 }
 @media screen and (max-width: 500px){
     header{
@@ -130,6 +136,9 @@ hr.star{
     }
     section .section-head h1{
         font-size: 1.5em;
+    }
+    hr.star{
+        width: 60vw;
     }    
 }
 @media screen and (max-width: 400px){
@@ -139,5 +148,8 @@ hr.star{
     }
     section .section-head h1{
         font-size: 1.4em;
+    }
+    hr.star{
+        width: 70vw;
     }
 }
