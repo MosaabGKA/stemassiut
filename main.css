@@ -87,6 +87,8 @@ nav.unsticky{
 nav .logo-box{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 nav .logo{
     position: relative;
@@ -95,7 +97,6 @@ nav .logo{
 }
 nav .logo-text{
     font-family: 'Canela Deck', Georgia, Times, 'Times New Roman', serif;
-    top: 20%;
     text-align: center;
     position: relative;
     margin: 15px 7px;
