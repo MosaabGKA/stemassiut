@@ -140,6 +140,9 @@ section .alumni-talks .talk{
     font-style: italic;
     opacity: 0.8;
 }
+.univ-head{
+    margin: 3vh;
+}
 
 .reveal{
     position: relative;
@@ -167,7 +170,7 @@ section .alumni-talks .talk{
           "5 6";
     }
     .intl .icon, .lcl .icon{
-        width: 15vw;
+        width: 18vw;
     }
     .lcl{
         grid-template-columns: 1fr 1fr; 
