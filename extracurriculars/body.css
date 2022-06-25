@@ -101,7 +101,7 @@ hr.star{
     height: 1px;
     margin-top: 3vh;
 }
-.link:hover{
+.link:hover, .link:active{
     text-decoration-line: underline;
 }
 .name::after{
@@ -118,7 +118,7 @@ hr.star{
     text-decoration-line: none;
     transition: all ease 0.4s;
 }
-.name:hover::after{
+.name:hover::after, .name:active::after{
     opacity: 1;
 }
 .name.saad::after{
@@ -145,7 +145,7 @@ hr.star{
     content: 'Shorouk Mohamed Abdellah, \'23';
 }
 .name.elfouly::after{
-    content: 'Youssef Mohamed Elfouly, \'23';
+    content: 'Youssef Mohamed El-Fouly, \'23';
 }
 .name.saadany::after{
     content: 'AbdelRhman Ateya Elsaadany, \'22';

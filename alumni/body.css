@@ -178,6 +178,44 @@ section .alumni-talks .talk{
 .univ-head{
     margin: 3vh;
 }
+.link:hover, .link:active{
+    text-decoration-line: underline;
+}
+.name::after{
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    padding: 4px;
+    background-color: #0e1144;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 12pt;
+    color: white;
+    text-decoration-line: none;
+    transition: all ease 0.4s;
+}
+.name:hover::after, .name:active::after{
+    opacity: 1;
+}
+.name.richmond::after{
+    content: 'Aamy Bakry';
+}
+.name.minerva::after{
+    content: 'Yousef Ashraf';
+}
+.name.debrecen::after{
+    content: 'Mohamed Osama';
+}
+.name.innopolis::after{
+    content: 'Moaiad Hashem';
+}
+/* .name.concordia::after{
+    content: '';
+} */
+.name.alu::after{
+    content: 'Ahmed Mohamed';
+}
 
 .reveal{
     position: relative;
