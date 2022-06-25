@@ -2,6 +2,10 @@ body{
     line-height: 1.5;
     transition: all 0.3s ease;
 }
+a {
+    text-decoration: none;
+    color: #000;
+}
 header{
     position: relative;
     display: flex;
@@ -84,7 +88,8 @@ section p{
     width: 70vw;
 }
 .comp ul li p, .exchange ul li p{
-    opacity: 0.8;
+    opacity: 1;
+    color: #222;
     height: fit-content;
 }
 .comp ul li:hover, .exchange ul li:hover{
@@ -95,6 +100,55 @@ hr.star{
     border-radius: 0;
     height: 1px;
     margin-top: 3vh;
+}
+.link:hover{
+    text-decoration-line: underline;
+}
+.name::after{
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    padding: 4px;
+    background-color: #0e1144;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 12pt;
+    color: white;
+    text-decoration-line: none;
+    transition: all ease 0.4s;
+}
+.name:hover::after{
+    opacity: 1;
+}
+.name.saad::after{
+    content: 'Saad Makhal Mankarious, \'20';
+}
+.name.ziad::after{
+    content: 'Ziad Ayman Bady, \'19';
+}
+.name.david::after{
+    content: 'David Osama, \'19';
+}
+.name.shaimaa::after{
+    content: 'Shaimaa Ibrahim Fath-Albab\'23';
+}
+.name.yyas2021::after{
+    content: 'Ahmed Ibrahim Eldosuky, \'22 \A Mahmoud Mohamed, \'22 \A Nabil Mohamed, \'22';
+    white-space: pre;
+}
+.name.yyas2022::after{
+    content: 'Mosaab Gamal, \'23';
+    z-index: 999999999;
+}
+.name.shorouk::after{
+    content: 'Shorouk Mohamed Abdellah, \'23';
+}
+.name.elfouly::after{
+    content: 'Youssef Mohamed Elfouly, \'23';
+}
+.name.saadany::after{
+    content: 'AbdelRhman Ateya Elsaadany, \'22';
 }
 
 .reveal{
