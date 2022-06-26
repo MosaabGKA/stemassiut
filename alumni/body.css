@@ -202,19 +202,19 @@ section .alumni-talks .talk{
     content: 'Aamy Bakry';
 }
 .name.minerva::after{
-    content: 'Yousef Ashraf';
+    content: 'Yousef Ashraf, \'21';
 }
 .name.debrecen::after{
-    content: 'Mohamed Osama';
+    content: 'Mohamed Osama, \'19';
 }
 .name.innopolis::after{
-    content: 'Moaiad Hashem';
+    content: 'Moaiad Hashem, \'21';
 }
 /* .name.concordia::after{
     content: '';
 } */
 .name.alu::after{
-    content: 'Ahmed Mohamed';
+    content: 'Ahmed Mohamed, \'20';
 }
 
 .reveal{
