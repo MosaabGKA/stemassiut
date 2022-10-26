@@ -179,6 +179,12 @@ section .section-content img{
     height: 20vh;
     border-radius: 12px 0 0 12px;
 }
+.people .administration.counselling.competitions{
+    flex-direction: column;
+    height: 30vh;
+    justify-content: space-around;
+    align-items: center;
+}
 .map{
     border: 0;
     height: 50vh;
