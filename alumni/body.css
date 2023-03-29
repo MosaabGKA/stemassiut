@@ -140,18 +140,18 @@ section .section-content img{
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* height: 70vh; */
+    height: 70vh;
     justify-content: space-around;
     align-items: center;
 }
 .preuni .ala img{
-    height: 150px !important;
-    width: auto !important;
+    width: 60vw;
+    height: auto;
     margin: 1.5vh 0vw;
 }
 .preuni .uwc img{
-    height: 80px !important;
-    width: auto !important;
+    width: 60vw;
+    height: auto;
     margin: 1.5vh 0vw;
 }
 section.talks{
@@ -199,40 +199,53 @@ section .alumni-talks .talk{
 }
 .name:hover::after, .name:active::after{
     opacity: 1;
+    transform: translateY(180px);
+}
+.name.ala:hover::after, .name.ala:active::after{
+    transform: translateY(-50px);
+}
+.name.uwc:hover::after, .name.uwc:active::after{
+    transform: translateY(-20px);
 }
 .name.richmond::after{
-    content: 'Aamy Bakry \'20 (UWC-USA \'21)';
+    content: 'Aamy Bakry \'19 (UWC-USA \'21)';
 }
 .name.minerva::after{
-    content: 'David Mikhael \'19 & Yousef Ashraf, \'21';
+    content: 'David Mikhael \'19 & Yousef Ashraf \'21';
 }
 .name.debrecen::after{
-    content: 'Mohamed Osama, \'19 & Rana Hazem, \'20';
+    content: 'Mohamed Osama \'19 & Rana Hazem \'20';
 }
 .name.innopolis::after{
-    content: 'Moaiad Hashem, \'21 & Belal El-Rashidy, \'21';
+    content: 'Moaiad Hashem \'21, Belal El-Rashidy \'21 & Mohamed Moataz \'21';
 }
-/* .name.concordia::after{
-    content: '';
-} */
+.name.concordia::after{
+    content: 'Beshoi Ashraf \'19';
+}
+.name.cornell::after{
+    content: 'Saad Makhal \'19 (ALA \'22)';
+}
+.name.aubg::after{
+    content: 'Ibrahim Mahfouz \'22';
+}
 .name.alu::after{
-    content: 'Ahmed M. Elshazly, \'20';
+    content: 'Ahmed M. Elshazly \'20';
 }
 .name.averett::after{
-    content: 'Hassan Shaheen, \'22';
+    content: 'Hassan Shaheen \'22';
 }
 
 .name.ala::after{
-    content: 'Saad Mankarious, \'20 & Mahmoud Hafez, \'22';
+    content: 'Saad Mankarious \'20 & Mahmoud Hafez \'22';
 }
 .name.uwc.usa::after{
-    content: 'Aamy Bakry, \'20';
+    content: 'Aamy Bakry \'19';
 }
 .name.uwc.adria::after{
-    content: 'Ebtisam Hamdy, \'21';
+    content: 'Ebtisam Hamdy \'21';
 }
 .name.uwc.maas::after{
-    content: 'Mohamed Khaled, \'23';
+    content: 'Mohamed Khaled \'23';
 }
 
 .reveal{
@@ -376,14 +389,18 @@ section .alumni-talks .talk{
     section.talks .alumni-talks q.talk{
         font-size: 0.8em;
     }
-    .preuni img.ala{
+    /* .preuni img.ala{
         height: 80px !important;
         width: auto !important;
     }
     .preuni img.uwc{
         height: 50px !important;
         width: auto !important;
-    }    
+    }     */
+    .preuni img{
+        height: auto !important;
+        width: 80vw !important;
+    }
 }
 @media screen and (max-width: 400px){
     section p{
@@ -408,12 +425,12 @@ section .alumni-talks .talk{
         height: 35vh;
     }
     .preuni img.ala{
-        height: 65px !important;
-        width: auto !important;
+        width: 80vw !important;
+        height: auto !important;
     }
     .preuni img.uwc{
-        height: 45px !important;
-        width: auto !important;
+        width: 80vw !important;
+        height: auto !important;
     }
     section .alumni-talks img{
         width: 30vw;
