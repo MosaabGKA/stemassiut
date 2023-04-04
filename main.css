@@ -272,7 +272,7 @@ footer hr{
     border:none;
     background-color:#000;
 }
-.copyright-left{
+footer .copyright-left{
     margin: 2vh 0vw;
     display: inline;
 }
@@ -348,10 +348,10 @@ header{
     footer hr{
         display: block;
     }
-    .copyright{
+    footer .copyright{
         display: inline;
     }
-    .copyright-left{
+    footer .copyright-left{
         margin: 2vh 0vw;
     }
     footer .hr-left{
