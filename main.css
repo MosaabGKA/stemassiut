@@ -284,7 +284,9 @@ footer .hr-left{
 header{
     transition: all ease 0.25s;
 }
-
+.inline-text{
+    display: inline !important;
+}
 .current-page{
     opacity: 1 !important; 
 }
