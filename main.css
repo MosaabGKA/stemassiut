@@ -221,9 +221,15 @@ footer .center{
 footer img{
     width: 15vw;
 }
-footer li, .copyright-left a, .copyright a{
+footer li{
     color: #000;
     opacity: 0.6;
+    margin-bottom: 2vh;
+    transition: 0.3s;
+}
+.copyright-left a, .copyright a{
+    color: #000;
+    opacity: 1;
     margin-bottom: 2vh;
     transition: 0.3s;
 }
@@ -268,6 +274,7 @@ footer hr{
 }
 footer .copyright-left{
     margin: 2vh 0vw;
+    display: inline;
 }
 footer .hr-left{
     display: block;
@@ -342,7 +349,7 @@ header{
         display: block;
     }
     footer .copyright{
-        display: block;
+        display: inline;
     }
     footer .copyright-left{
         margin: 2vh 0vw;
