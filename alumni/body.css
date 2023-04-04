@@ -145,12 +145,12 @@ section .section-content img{
     align-items: center;
 }
 .preuni .ala img{
-    width: 50vw;
+    width: 60vw;
     height: auto;
     margin: 1.5vh 0vw;
 }
 .preuni .uwc img{
-    width: 50vw;
+    width: 60vw;
     height: auto;
     margin: 1.5vh 0vw;
 }
@@ -211,19 +211,13 @@ section .alumni-talks .talk{
     content: 'Aamy Bakry \'19 (UWC-USA \'21)';
 }
 .name.minerva::after{
-    content: 'David Mikhael \'19 \A Yousef Ashraf \'21';
-    white-space: pre;
-    text-align: center;
+    content: 'David Mikhael \'19 & Yousef Ashraf \'21';
 }
 .name.debrecen::after{
-    content: 'Mohamed Osama \'19 \A Rana Hazem \'20';
-    white-space: pre;
-    text-align: center;
+    content: 'Mohamed Osama \'19 & Rana Hazem \'20';
 }
 .name.innopolis::after{
-    content: 'Moaiad Hashem \'21 \A Belal El-Rashidy \'21 \A Mohamed Moataz \'21';
-    white-space: pre;
-    text-align: center;
+    content: 'Moaiad Hashem \'21, Belal El-Rashidy \'21 & Mohamed Moataz \'21';
 }
 .name.concordia::after{
     content: 'Beshoi Ashraf \'19';
@@ -242,9 +236,7 @@ section .alumni-talks .talk{
 }
 
 .name.ala::after{
-    content: 'Saad Mankarious \'20 \A Mahmoud Hafez \'22';
-    white-space: pre;
-    text-align: center;
+    content: 'Saad Mankarious \'20 & Mahmoud Hafez \'22';
 }
 .name.uwc.usa::after{
     content: 'Aamy Bakry \'19';
