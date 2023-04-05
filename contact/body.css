@@ -128,8 +128,8 @@ section .section-content img{
 .people .administration{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    /* width: 70vw; */
+    justify-content: space-between;
+    width: 70vw;
     width: 50vw;
     margin-bottom: 50px;
 }
