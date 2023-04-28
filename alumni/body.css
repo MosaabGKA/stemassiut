@@ -366,6 +366,7 @@ section .alumni-talks .talk{
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          /*note*/
     }
     .intl .icon, .lcl .icon{
         width: 30vw;
