@@ -282,12 +282,16 @@ section .alumni-talks .talk{
     }
     .intl{
         grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
         grid-template-areas: 
-          "1 2"
-          "3 4"
-          "5 6";
+          "grid1 grid2"
+          "grid3 grid4"
+          "grid5 grid6"
+          "grid7 grid8"
+          "grid9 grid10";
         height: fit-content;
+        /* width: 70vw; */
+        /* height: auto; */
     }
     .intl .icon, .lcl .icon{
         width: 18vw;
@@ -366,7 +370,6 @@ section .alumni-talks .talk{
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          /*note*/
     }
     .intl .icon, .lcl .icon{
         width: 30vw;
@@ -460,5 +463,11 @@ section .alumni-talks .talk{
     }
     section.talks .section-head h1{
         font-size: 2em;
+    }
+}
+@media screen and (max-width: 300px) {
+    .section-content ul li span, .section-content ul li span em{
+        font-size: 13pt;
+        transform: translateY(10px);
     }
 }

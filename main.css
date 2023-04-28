@@ -194,8 +194,30 @@ footer{
     background-color: #01032c11;
     padding: 5vh 5vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+}
+footer .container{
+    display: flex;
+    flex-direction: row;
+}
+footer .copyright{
+    /* display: flex; */
+    display: inline;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer .copyright hr{
+    display: inline-flex;
+}
+footer .copyright p{
+    display: inline;
+}
+footer .copyright a{
+    color: #000;
+    opacity: 1;
 }
 footer .right{
     width: 30vw;
@@ -227,12 +249,6 @@ footer li{
     margin-bottom: 2vh;
     transition: 0.3s;
 }
-.copyright-left a, .copyright a{
-    color: #000;
-    opacity: 1;
-    margin-bottom: 2vh;
-    transition: 0.3s;
-}
 footer li:hover, .copyright-left a:hover, .copyright a:hover{
     text-decoration: underline;
     opacity: 0.9;
@@ -260,26 +276,6 @@ footer .left .social{
 }
 footer p{
     opacity: 0.7;
-}
-footer .copyright{
-    display: none;
-}
-footer hr{
-    display: none;
-    width: 90vw;
-    margin: 2vh 0vw;
-    height:2px;
-    border:none;
-    background-color:#000;
-}
-footer .copyright-left{
-    margin: 2vh 0vw;
-    display: inline;
-}
-footer .hr-left{
-    display: block;
-    width: 30vw;
-    border-radius: 0% !important;
 }
 header{
     transition: all ease 0.25s;
@@ -319,9 +315,8 @@ header{
     }
 }
 @media screen and (max-width: 768px){
-    footer {
+    footer .container{
         flex-direction: column;
-        align-items: center;
     }
     footer .left{
         justify-content: space-around;
@@ -346,27 +341,6 @@ header{
     footer .left .social{
         width: 30vw;
         justify-content: space-between;
-    }
-    footer hr{
-        display: block;
-    }
-    footer .copyright{
-        display: inline;
-    }
-    footer .copyright-left{
-        margin: 2vh 0vw;
-    }
-    footer .hr-left{
-        display: block;
-        width: 30vw;
-    }
-    footer .copyright-left{
-        margin: 2vh 0vw;
-        display: none;
-    }
-    footer .hr-left{
-        display: none;
-        width: 30vw;
     }
 }
 @media screen and (max-width: 600px){
@@ -404,9 +378,19 @@ header{
         width: 0px;
     }
 }
-@media screen and (max-width: 323px){
+@media screen and (max-width: 330px){
     nav .logo-text{
-        /* top: 4vh; */
-        font-size: 1em;
+        font-size: 1.2em;
     }   
+    nav.sticky .logo{
+        width: 25vw;
+    }
+}
+@media screen and (max-width: 300px){
+    nav .logo-text{
+        font-size: .8em;
+    }   
+    nav.sticky .logo{
+        width: 20vw;
+    }
 }
