@@ -189,6 +189,13 @@ nav ul li a:focus::after {
     -ms-transform: rotate(-45deg) translateY(-10px);
     -webkit-transform: rotate(-45deg) translateY(-10px);
 }
+hr{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 3px;
+    border: none;
+    border-radius: 50%;
+    width:70vw;
+}
 footer{
     color: #000;
     background-color: #01032c11;
