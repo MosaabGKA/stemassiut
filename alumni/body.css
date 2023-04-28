@@ -106,6 +106,7 @@ section .section-content img{
     font-family: Georgia, Times, 'Times New Roman', serif;
     font-size: 90%;
     text-align: center;
+    transform: translateY(40px);
 }
 .grid8{
     padding: 5vh;
