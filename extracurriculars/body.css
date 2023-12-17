@@ -121,6 +121,9 @@ hr.star{
 .name:hover::after, .name:active::after{
     opacity: 1;
 }
+.name.mina::after{
+    content: "Mina Basilious, \ '24";
+}
 .name.saad::after{
     content: 'Saad Makhal Mankarious, \'20';
 }
